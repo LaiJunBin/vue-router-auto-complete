@@ -1,0 +1,40 @@
+{
+  "name": "vue-router-auto-complete",
+  "description": "The package implements routes syntax auto completed and children routes prefix.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LaiJunBin/vue-router-auto-complete.git"
+  },
+  "author": "Lai JunBin",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-router-auto-complete.umd.cjs",
+  "module": "./dist/vue-router-auto-complete.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-router-auto-complete.js",
+      "require": "./dist/vue-router-auto-complete.umd.cjs"
+    }
+  },
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.35.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.0",
+    "vite-plugin-dts": "^2.0.2"
+  }
+}
