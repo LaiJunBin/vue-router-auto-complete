@@ -1,8 +1,13 @@
 import { type Routes } from './types'
 
+interface StringObject {
+  index?: string
+  [key: string]: string | StringObject | undefined
+}
+
 export const generateRoutes = <T>(routes: T): Routes<T> => {
   const f = (
-    object: any,
+    object: StringObject,
     paths: string[] = [],
     names: string[] = []
   ): Routes<T> => {
@@ -11,7 +16,7 @@ export const generateRoutes = <T>(routes: T): Routes<T> => {
         if (value instanceof Object) {
           return [
             key,
-            f(object[key], [...paths, object[key].index], [...names, key])
+            f(object[key] as StringObject, [...paths, (object[key] as StringObject).index as string], [...names, key])
           ]
         } else {
           const path = [...paths, key === 'index' ? '' : object[key]].join('')
@@ -28,5 +33,5 @@ export const generateRoutes = <T>(routes: T): Routes<T> => {
     )
   }
 
-  return f(routes)
+  return f(routes as StringObject)
 }
