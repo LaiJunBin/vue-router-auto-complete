@@ -1,5 +1,7 @@
 # vue-router-auto-complete
 
+[English](https://github.com/LaiJunBin/vue-router-auto-complete#vue-router-auto-complete)｜繁體中文
+
 > 此套件基於 TypeScript 開發使用
 
 這個套件讓你在使用 `vue-router` 時有語法提示，也可以幫你自動補齊 children routes 的前綴。

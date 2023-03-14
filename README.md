@@ -1,5 +1,7 @@
 # vue-router-auto-complete
 
+English｜[繁體中文](https://github.com/LaiJunBin/vue-router-auto-complete/blob/main/README.zh-tw.md#vue-router-auto-complete)
+
 > This package is used for typescript development.
 
 The package implements routes syntax auto completed and children routes prefix.
