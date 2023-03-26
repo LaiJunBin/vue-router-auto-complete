@@ -60,6 +60,7 @@ export default generateRoutes<typeof routes>(routes)
 ```
 
 這時也會有完整的語法提示可以使用:
+
 ![](./docs/images/auto-complete.gif)
 
 
